@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Component</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(214, 225, 240);
+            min-height: 100vh;
+            text-rendering: optimizeSpeed;
+            margin: 0px;
+        }
+        .main-Card {
+            display: grid;
+            background-color: #fff;
+            border: none;
+            border-radius: 18px;
+            width: 295px;
+            padding-bottom: 26px;
+            
+        }
+
+        .qr-Image {
+            display: grid;
+            margin: 0 auto;
+            padding-top: 15px;
+        }
+        .main-Text {
+            display: grid;
+            text-align: center;
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+        h2 {
+            font-size: 19px;
+            font-weight: bolder;
+            margin-top: 20px;
+            color: hsl(218, 44%, 22%);
+        }
+        h2:hover {
+            color: hsl(219, 41%, 56%);
+            cursor: pointer;
+            transition: all 150ms ease-in-out;
+        }
+        
+        p {
+            margin-top: 0px;
+            font-size: 13px;
+            color: hsl(219, 16%, 75%);
+            font-weight: 400;
+        }
+        p:hover {
+            color: hsl(217, 93%, 33%);
+            cursor: pointer;
+            transition: all 150ms ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="main-Card">
+            <picture class="qr-Image">
+                <source media="(min-width: 5em)" srcset="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/320/original/image-qr-code.png?1694224235" width="265px"/>
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/320/original/image-qr-code.png?1694224235" alt="image-of-qr-code" style="border-radius: 9px;"/>
+            </picture>
+            <div class="main-Text">
+            <header>
+                <h2>Improve your front-end<br />skills by building projects</h2>
+            </header>
+            <main>
+                <p>
+                    Scan the QR code to visit Frontend<br />Mentor and take your coding skills to<br/>the next level
+                </p>
+            </main>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
